@@ -22,7 +22,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "single",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -35,7 +35,10 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {},
+      "router": {
+        "origin": "https://offloveproject.github.io",
+        "basePath": "/monolis"
+      },
       "eas": {
         "projectId": "68e44284-afa5-40b9-b936-c53307d9f8ab"
       }

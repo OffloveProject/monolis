@@ -365,5 +365,45 @@ input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-web
 @keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
 @keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
 @keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
-@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="icon" href="/favicon.ico" /></head><body><div id="root"><div class="css-g5y9jx r-13awgt0"><!--$--><div class="css-g5y9jx r-13awgt0"><div style="position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none;visibility:hidden"></div><div class="css-g5y9jx r-13awgt0 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color:rgba(242,242,242,1.00);display:flex"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0"><!--$--><div class="css-g5y9jx r-1awozwy r-13awgt0 r-1777fci r-1pcd2l5"><div dir="auto" class="css-146c3p1 r-adyw6z r-1kfrs79">This screen doesn&#x27;t exist.</div><a href="/" dir="auto" role="link" class="css-146c3p1 r-19h5ruw r-1d7mnkm r-1loqt21"><span class="css-1jxf684">Go to home screen!</span></a></div><!--/$--></div></div></div></div><!--/$--></div></div><script src="/_expo/static/js/web/entry-f6c3288c24a15d954e43d4d2dbf3c604.js" defer></script>
-</body></html>
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="icon" href="/favicon.ico" /></head>
+<body>
+  <div id="root">
+    <div
+      style="
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Helvetica, Arial, sans-serif;
+        text-align: center;
+      "
+    >
+      <h1 style="margin: 0 0 8px; font-size: 28px;">
+        モノリス −お買い物リスト−
+      </h1>
+      <p style="margin: 0; font-size: 18px;">
+        Now loading...
+      </p>
+    </div>
+  </div>
+
+  <!-- 数百ミリ秒後にルートへ自動遷移 -->
+  <script>
+    // 必要なら遅延時間を調整（単位ミリ秒）
+    setTimeout(function () {
+      // ここは現在と同じく「/」に飛ばす
+      window.location.href = "/";
+      // もし必ず /monolis/ に飛ばしたい場合は
+      // window.location.href = "/monolis/";
+    }, 300);
+  </script>
+
+  <!-- SPA 本体のエントリ。パスは現在 index.html で使っているものと合わせる -->
+  <script
+    src="./_expo/static/js/web/entry-f6c3288c24a15d954e43d4d2dbf3c604.js"
+    defer
+  ></script>
+</body>
+</html>
